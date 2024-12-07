@@ -87,15 +87,14 @@ section {
 .heading span {
   color: rgb(115, 3, 167);
 }
+
 header .logo {
   font-size: 1.9rem;
   font-weight: 800;
   text-decoration: none;
   color: #0e2431;
 }
-header .logo i {
-  font-size: 2.2rem;
-}
+
 header .logo:hover {
   color: #fc8c05;
 }
@@ -214,7 +213,7 @@ header .navbar ul li a:hover {
 }
 .home .image img {
   width: 70%;
-  margin-left: 6rem;
+  margin-left: 10rem;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
@@ -223,25 +222,30 @@ header .navbar ul li a:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 .home .content h2 {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 800;
   color: #002057;
 }
 .home .content h2 span {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 800;
   color: #ff7b00;
+}
+.home .content h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #b2be05;
 }
 .home .content p {
   font-size: 2.5rem;
   color: #000;
-  font-weight: 600;
+  font-weight: 500;
   padding: 1rem 0;
 }
 .home .content p span {
   font-size: 2.5rem;
   color: rgb(148, 8, 8);
-  font-weight: 600;
+  font-weight: 00;
   padding: 1rem 0;
 }
 .home .btn {

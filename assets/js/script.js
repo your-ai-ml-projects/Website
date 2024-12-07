@@ -42,7 +42,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Hema Kalyan Portfolio";
+            document.title = "YAM - Your AI ML Project";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
     });
@@ -50,7 +50,7 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Machine Learning", "Data Science", "Artificial Intelligence", "Deep Learning", "Computer Vision","Natural Language Processing", "Generative AI"],
+    strings: ["Data Science", "Computer Vision", "NLP", "Generative AI", "Machine Learning", "Artificial Intelligence", "Deep Learning"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
