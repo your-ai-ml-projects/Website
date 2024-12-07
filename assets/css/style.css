@@ -210,6 +210,7 @@ header .navbar ul li a:hover {
 .home .image {
   flex: 1 1 40rem;
   z-index: 1;
+  text-align: center;
 }
 .home .image img {
   width: 70%;
@@ -330,6 +331,7 @@ header .navbar ul li a:hover {
 
 /* hero media queries starts*/
 @media (max-width: 450px) {
+  
   .home .btn {
     margin: 4rem 0;
   }
@@ -337,7 +339,7 @@ header .navbar ul li a:hover {
     margin-top: 12rem;
   }
   .home .image img {
-    margin-top: -12rem;
+    text-align: center;
   }
   .home .content p {
     font-size: 2.2rem;
@@ -840,7 +842,7 @@ header .navbar ul li a:hover {
   left: -16px;
 }
 .experience .content {
-  background-color: #f68c09;
+  background-color: #03133c;
   position: relative;
   border-radius: 6px;
 }
@@ -853,15 +855,17 @@ header .navbar ul li a:hover {
   margin-left: 1.5rem;
   padding-bottom: 1rem;
 }
-.experience .content .desc h3 {
-  font-size: 1.5rem;
+.experience .content h2 {
+  font-size: 2rem;
   font-weight: 600;
+  color: #f68c09;
 }
 .experience .content .desc p {
   font-size: 1.3rem;
   padding-right: 3rem;
-  text-align: justify;
+  text-align:left;
   white-space: pre-line;
+  color: #fff;
   
 }
 /* view all button */
