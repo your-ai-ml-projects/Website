@@ -50,7 +50,7 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Data Science", "Computer Vision", "NLP", "Generative AI", "Machine Learning", "Artificial Intelligence", "Deep Learning"],
+    strings: ["Data Science", "Computer Vision", "NLP", "Generative AI", "Machine Learning", "Artificial Intelligence", "Deep Learning", "Data Analytics" ],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
