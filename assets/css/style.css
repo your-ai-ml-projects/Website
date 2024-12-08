@@ -553,7 +553,7 @@ header .navbar ul li a:hover {
 /* skills section ends */
 
 /* education section starts */
-.education {
+/* .education {
   background: #e5ecfb;
   min-height: 90vh;
 }
@@ -576,7 +576,7 @@ header .navbar ul li a:hover {
 .education .box-container .box {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 50%;
   border-radius: 0.5rem;
   box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -630,7 +630,7 @@ header .navbar ul li a:hover {
   font-weight: 700;
 }
 
-/* education media queries starts*/
+/* education media queries starts
 @media screen and (max-width: 600px) {
   .education .box-container .box {
     flex-direction: column;
@@ -657,9 +657,86 @@ header .navbar ul li a:hover {
     margin-right: 1rem;
     flex-wrap: wrap;
   }
-}
+} */
 /* education media queries ends*/
-/* education section ends */
+/* education section ends GPT*/
+/* General Section Styling */
+.what-we-offer {
+  background-color: #f9f9f9;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.what-we-offer .heading {
+  font-size: 2.5rem;
+  color: #012970;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.what-we-offer .heading span {
+  color: #007bff;
+}
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Individual Card */
+.card {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.card-icon {
+  font-size: 3rem;
+  color: #007bff;
+  margin-right: 1.5rem;
+}
+
+/* Card Content */
+.card-content {
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  color: #012970;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+
+
 
 /* work section starts */
 .work {
