@@ -684,6 +684,7 @@ header .navbar ul li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  margin-top: 15px;
 }
 
 /* Individual Card */
@@ -732,6 +733,113 @@ header .navbar ul li a:hover {
   .cards-container {
     flex-direction: column;
     gap: 1.5rem;
+  }
+}
+/* Section Styling */
+.why-choose-us-section {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Warm gradient background */
+  color: #ffffff; /* White heading text */
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.why-choose-us-heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.why-choose-us-heading span {
+  color: #012970; /* Highlighted text in blue */
+}
+
+/* Cards Container */
+.why-choose-us-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Individual Card */
+.why-choose-us-card {
+  background: #ffffff; /* White card background */
+  color: #012970; /* Card text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.why-choose-us-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Styling */
+.why-choose-us-image {
+  flex: 0 0 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-choose-us-image img {
+  width: 60px; /* Small image size */
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Vertical Divider */
+.why-choose-us-divider {
+  width: 2px;
+  background: #ddd;
+  height: 80%; /* Matches card content height */
+  margin: 0 1rem;
+}
+
+/* Card Content */
+.why-choose-us-content {
+  flex: 1;
+  text-align: left;
+}
+
+.why-choose-us-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #012970; /* Card title color */
+}
+
+.why-choose-us-content p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .why-choose-us-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .why-choose-us-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why-choose-us-divider {
+    width: 80%; /* Horizontal divider for mobile */
+    height: 2px;
+    margin: 1rem 0;
+  }
+
+  .why-choose-us-content {
+    text-align: center;
   }
 }
 
