@@ -790,8 +790,8 @@ header .navbar ul li a:hover {
 }
 
 .why-choose-us-image img {
-  width: 60px; /* Small image size */
-  height: 60px;
+  width: 100px; /* Small image size */
+  height: 100px;
   object-fit: contain;
 }
 
