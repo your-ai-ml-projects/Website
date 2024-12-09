@@ -69,6 +69,28 @@ async function fetchData(type = "skills") {
     return data;
 }
 
+document.querySelectorAll('.faq').forEach(faq => {
+    const question = faq.querySelector('.faq-question');
+    const answer = faq.querySelector('.faq-answer');
+    const button = faq.querySelector('.toggle-button');
+
+    question.addEventListener('click', () => {
+        const isOpen = answer.style.display === 'block';
+
+        // Close all other FAQ answers
+        document.querySelectorAll('.faq-answer').forEach(el => (el.style.display = 'none'));
+        document.querySelectorAll('.toggle-button').forEach(btn => (btn.textContent = '+'));
+
+        // Open the clicked FAQ if it was closed
+        if (!isOpen) {
+            answer.style.display = 'block';
+            button.textContent = '−';
+        }
+    });
+});
+
+
+
 function showSkills() {
     let skillsContainer = document.getElementById("skillsContainer");
     let skillHTML = "";
@@ -230,3 +252,4 @@ srtop.reveal('.experience .timeline .container', { interval: 400 });
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 400 });
 srtop.reveal('.contact .container .form-group', { delay: 400 });
+

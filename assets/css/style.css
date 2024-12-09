@@ -549,117 +549,7 @@ header .navbar ul li a:hover {
     width: 100%;
   }
 }
-/* skills media queries ends*/
-/* skills section ends */
 
-/* education section starts */
-/* .education {
-  background: #e5ecfb;
-  min-height: 90vh;
-}
-.education .qoute {
-  font-size: 1.5rem;
-  text-align: center;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  margin-top: 0.5rem;
-}
-.education .box-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
-}
-.education .box-container .box {
-  display: flex;
-  flex-direction: row;
-  width: 50%;
-  border-radius: 0.5rem;
-  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  text-align: center;
-  position: relative;
-  margin-top: 2rem;
-  overflow: hidden;
-  transition: 0.3s;
-  background: rgb(252, 252, 252);
-}
-.education .box-container .box:hover {
-  transform: scale(1.03);
-  box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
-}
-.education .box-container .box .image {
-  flex: 1 1 20rem;
-  width: 100%;
-}
-.education .box-container .box img {
-  object-fit: cover;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.education .box-container .box .content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  flex-wrap: wrap;
-  flex: 1 1 70rem;
-}
-.education .box-container .box .content h3 {
-  font-size: 2.5rem;
-  color: #012970;
-  padding: 0.5rem 0;
-  font-weight: 600;
-  text-align: left;
-  margin-left: 1rem;
-}
-.education .box-container .box .content p {
-  font-size: 1.5rem;
-  margin-left: 1rem;
-  text-align: left;
-}
-.education h4 {
-  font-size: 2rem;
-  color: rgb(34, 109, 0);
-  text-align: left;
-  margin: 1rem;
-  font-family: "Nunito", sans-serif;
-  font-weight: 700;
-}
-
-/* education media queries starts
-@media screen and (max-width: 600px) {
-  .education .box-container .box {
-    flex-direction: column;
-    width: 100%;
-  }
-  .education .box-container .box .image {
-    width: 100%;
-    height: 25rem;
-  }
-  .education .box-container .box img {
-    width: 100%;
-  }
-  .education .box-container .box .content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    flex-wrap: wrap;
-    flex: 0;
-  }
-  .education .btns {
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    flex-wrap: wrap;
-  }
-} */
-/* education media queries ends*/
-/* education section ends GPT*/
 /* General Section Styling */
 .what-we-offer {
   background-color: #f9f9f9;
@@ -667,15 +557,19 @@ header .navbar ul li a:hover {
   text-align: center;
 }
 
-.what-we-offer .heading {
+.what-we-offer .heading h2{
   font-size: 2.5rem;
   color: #012970;
   margin-bottom: 2rem;
-  font-weight: bold;
+  font-weight: 600;
+  
 }
 
 .what-we-offer .heading span {
+  font-size: 2.5rem;
+  font-weight: 600;
   color: #007bff;
+  
 }
 
 /* Cards Container */
@@ -852,7 +746,81 @@ header .navbar ul li a:hover {
   }
 }
 
+/* FAQ Section Styling */
+.faq-section {
+  background: #f9f9f9;
+  padding: 3rem 2rem;
+  text-align: center;
+}
 
+.faq-heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #012970;
+}
+
+.faq {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+}
+
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: #fff; /* Button matches theme */
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.faq-question h3 {
+    margin: 0;
+    color: black;
+}
+
+.toggle-button {
+    background-color: #ffffff;
+    color: #007bff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.toggle-button:hover {
+    transform: scale(1.1);
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px 20px;
+    background-color: #012970;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 75px;
+    margin-right: 75px;
+    text-align: left;
+    border-radius: 5px;
+  
+}
+
+/* Ensure single-column layout for all screens */
+.faq {
+    flex: 1 1 100%;
+}
 
 
 
@@ -1137,6 +1105,7 @@ header .navbar ul li a:hover {
 /* experience media queries ends */
 /* experience section ends */
 
+
 /* footer section starts */
 .footer {
   min-height: auto;
@@ -1154,7 +1123,7 @@ header .navbar ul li a:hover {
 }
 .footer .box-container .box h3 {
   font-size: 2.5rem;
-  color: #fff;
+  color: #ffae00;
   padding-bottom: 1rem;
   font-weight: normal;
 }
