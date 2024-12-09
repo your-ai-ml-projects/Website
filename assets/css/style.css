@@ -828,20 +828,30 @@ header .navbar ul li a:hover {
   }
 
   .why-choose-us-card {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row; /* Keep the horizontal layout */
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
   }
 
   .why-choose-us-divider {
-    width: 80%; /* Horizontal divider for mobile */
-    height: 2px;
-    margin: 1rem 0;
+    width: 2px; /* Maintain the vertical divider */
+    height: 80%; /* Adjust height for smaller screens */
+    margin: 0 1rem;
+    background-color: #ccc; /* Ensure visibility on smaller screens */
+  }
+
+  .why-choose-us-image {
+    flex-shrink: 0; /* Prevent shrinking of the image */
+    width: 50px; /* Adjust size for mobile */
   }
 
   .why-choose-us-content {
-    text-align: center;
+    flex: 1;
+    text-align: left; /* Keep the text aligned consistently */
   }
 }
+
 
 
 
