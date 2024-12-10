@@ -91,7 +91,28 @@ document.querySelectorAll('.faq').forEach(faq => {
 
 
 
-
+function showSkills() {
+    let skillsContainer = document.getElementById("skillsContainer");
+    let skillHTML = "";
+    
+    // Fetch the data from the JSON file
+    fetch('path/to/skills.json')
+      .then(response => response.json()) // Parse the JSON data into an object
+      .then(skills => {
+        // Loop through each skill and generate the HTML code
+        skills.forEach(skill => {
+          skillHTML += `
+            <div class="bar">
+              <div class="info">
+                <img src=${skill.icon} alt="skill" />
+                <span>${skill.name}</span>
+              </div>
+            </div>`;
+        });
+        // Insert the HTML code into the skills container element
+        skillsContainer.innerHTML = skillHTML;
+      });
+  }
   
 
 function showProjects(projects) {
