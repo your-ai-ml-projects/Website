@@ -1390,7 +1390,7 @@ header .navbar ul li a:hover {
 /* Card Container */
 .portfolio-card-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Default to 3 cards for large screens */
+  grid-template-columns: repeat(4, 1fr); /* Default to 4 cards for large screens */
   gap: 20px;
 }
 
@@ -1450,8 +1450,6 @@ header .navbar ul li a:hover {
   font-weight: bold;
 }
 
-/* Responsive Design */
-
 /* Small screens: Single card */
 @media (max-width: 576px) {
   .portfolio-card-wrapper {
@@ -1466,9 +1464,10 @@ header .navbar ul li a:hover {
   }
 }
 
-/* Large screens: Three cards */
+/* Large screens: Four cards */
 @media (min-width: 993px) {
   .portfolio-card-wrapper {
-    grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+    grid-template-columns: repeat(4, 1fr); /* Four cards per row */
   }
 }
+
