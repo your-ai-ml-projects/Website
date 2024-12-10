@@ -43,7 +43,7 @@ document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
             document.title = "YAM - Your AI ML Project";
-            $("#favicon").attr("href", "assets/images/favicon.png");
+            $("#favicon").attr("href", "assets/images/Logo.jpg");
         }
     });
 
@@ -91,28 +91,7 @@ document.querySelectorAll('.faq').forEach(faq => {
 
 
 
-function showSkills() {
-    let skillsContainer = document.getElementById("skillsContainer");
-    let skillHTML = "";
-    
-    // Fetch the data from the JSON file
-    fetch('path/to/skills.json')
-      .then(response => response.json()) // Parse the JSON data into an object
-      .then(skills => {
-        // Loop through each skill and generate the HTML code
-        skills.forEach(skill => {
-          skillHTML += `
-            <div class="bar">
-              <div class="info">
-                <img src=${skill.icon} alt="skill" />
-                <span>${skill.name}</span>
-              </div>
-            </div>`;
-        });
-        // Insert the HTML code into the skills container element
-        skillsContainer.innerHTML = skillHTML;
-      });
-  }
+
   
 
 function showProjects(projects) {
@@ -236,11 +215,12 @@ srtop.reveal('.about .content .resumebtn', { delay: 200 });
 
 
 /* SCROLL SKILLS */
-srtop.reveal('.skills .container', { interval: 200 });
-srtop.reveal('.skills .container .bar', { delay: 400 });
+srtop.reveal('.what-we-offer ', { interval: 200 });
+srtop.reveal('.what-we-offer ', { delay: 400 });
 
 /* SCROLL EDUCATION */
-srtop.reveal('.education .box', { interval: 200 });
+srtop.reveal('.why-choose-us-section ', { interval: 200 });
+srtop.reveal('.why-choose-us-section ', { delay: 400 });
 
 /* SCROLL PROJECTS */
 srtop.reveal('.work .box', { interval: 200 });
