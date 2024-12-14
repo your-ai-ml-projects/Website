@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
@@ -339,7 +340,7 @@ header .navbar ul li a:hover {
   .socials {
     margin-top: 12rem;
   }
-  .home .image img {
+  .home .image{
     text-align: center;
   }
   .home .content p {
@@ -1334,7 +1335,7 @@ header .navbar ul li a:hover {
   right: 2rem;
   padding: 1rem 1.5rem;
   font-size: 2rem;
-  background: #25D366;
+  background: #ffae00;
   color: rgb(13, 0, 44);
   border-radius: 50%;
   transition: 1s linear;
@@ -1390,7 +1391,7 @@ header .navbar ul li a:hover {
 /* Card Container */
 .portfolio-card-wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Default to 4 cards for large screens */
+  grid-template-columns: repeat(3, 1fr); /* Default to 3 cards for large screens */
   gap: 20px;
 }
 
@@ -1450,6 +1451,8 @@ header .navbar ul li a:hover {
   font-weight: bold;
 }
 
+/* Responsive Design */
+
 /* Small screens: Single card */
 @media (max-width: 576px) {
   .portfolio-card-wrapper {
@@ -1464,10 +1467,9 @@ header .navbar ul li a:hover {
   }
 }
 
-/* Large screens: Four cards */
+/* Large screens: Three cards */
 @media (min-width: 993px) {
   .portfolio-card-wrapper {
-    grid-template-columns: repeat(4, 1fr); /* Four cards per row */
+    grid-template-columns: repeat(3, 1fr); /* Three cards per row */
   }
 }
-
