@@ -339,7 +339,7 @@ header .navbar ul li a:hover {
   .socials {
     margin-top: 12rem;
   }
-  .home .image img {
+  .home .image{
     text-align: center;
   }
   .home .content p {
