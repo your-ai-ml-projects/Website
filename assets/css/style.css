@@ -1390,13 +1390,17 @@ header .navbar ul li a:hover {
 /* Card Container */
 .portfolio-card-wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Default to 4 cards for large screens */
+  grid-template-columns: repeat(3, 1fr); /* Default to 4 cards for large screens */
   gap: 20px;
 }
 
 .portfolio-card {
   background: #fff;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures items are spaced out */
+  
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1407,6 +1411,7 @@ header .navbar ul li a:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+
 .portfolio-card img {
   width: 100%;
   height: 180px;
@@ -1414,6 +1419,10 @@ header .navbar ul li a:hover {
 }
 
 .portfolio-card-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Ensures it stretches */
+  justify-content: space-between; /* Space text and "Read More" */
   padding: 15px;
 }
 
@@ -1428,27 +1437,51 @@ header .navbar ul li a:hover {
 }
 
 .portfolio-btn {
+  display: inline-block; /* Makes it behave like a block-level button */
+  padding: 8px 16px;
   text-decoration: none;
-  color: #007bff;
+  color: #fff;
+  background-color: #007bff; /* Button background color */
   font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
 }
 
 .portfolio-btn:hover {
-  text-decoration: underline;
+  background-color: #71fe05; /* Highlighted color on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
 }
 
-/* View More */
-.portfolio-view-more {
-  text-align: center;
-  margin: 30px 0;
+
+/* Centering Container */
+.portfolio-view-btn-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+
+  text-align: center; /* Ensures the content aligns in the center */
 }
 
+/* Button Styling */
 .portfolio-view-btn {
+  
+  padding: 10px 20px;
   text-decoration: none;
+  color: #000031;
+  background-color: #fff; /* Button background color */
   font-size: 1rem;
-  color: #007bff;
   font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+.portfolio-view-btn:hover {
+  background-color: #71fe05; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+
 
 /* Small screens: Single card */
 @media (max-width: 576px) {
@@ -1467,7 +1500,7 @@ header .navbar ul li a:hover {
 /* Large screens: Four cards */
 @media (min-width: 993px) {
   .portfolio-card-wrapper {
-    grid-template-columns: repeat(4, 1fr); /* Four cards per row */
+    grid-template-columns: repeat(3, 1fr); /* Four cards per row */
   }
 }
 
