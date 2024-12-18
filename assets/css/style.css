@@ -1466,6 +1466,7 @@ header .navbar ul li a:hover {
 /* Button Styling */
 .portfolio-view-btn {
   
+  margin-top: 10px;
   padding: 10px 20px;
   text-decoration: none;
   color: #000031;
