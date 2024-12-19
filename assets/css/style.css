@@ -1482,6 +1482,14 @@ header .navbar ul li a:hover {
   transform: translateY(-2px); /* Lift effect */
 }
 
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Makes the container take the full viewport height */
+  margin: 0; /* Removes any default margin */
+}
+
 
 
 /* Small screens: Single card */
